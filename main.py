@@ -43,7 +43,7 @@ def check_stock_price(url):
     percentage_change = float(percentage_change_element.text.strip("%"))
     print(percentage_change)
     
-    if percentage_change < 0:
+    if percentage_change < -0.10:
         send_alert(percentage_change)
 
 

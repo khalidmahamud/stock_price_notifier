@@ -49,6 +49,4 @@ def check_stock_price(url):
 
 if __name__ == "__main__":
     url = "https://zse.hr/en/indeks-366/365?isin=HRZB00ICBEX6"
-    while True:
-        check_stock_price(url)
-        time.sleep(300)  # Wait for 5 minutes before checking again
+    check_stock_price(url)
